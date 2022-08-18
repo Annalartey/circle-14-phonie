@@ -31,7 +31,7 @@ label {
 }
 .container{
     width: 100vw;
-    height: 100vh;
+    min-height: 100vh;
     background-color: rgba(26, 82, 16, 0.59);
     border-radius: 15px;
     justify-content: center;
