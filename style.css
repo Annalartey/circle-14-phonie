@@ -29,6 +29,10 @@ label {
     font-size: 20px;
     margin: 20px;
 }
+footer{
+    color: rgb(118, 118, 118);
+    text-align: center;
+}
 .container{
     width: 100vw;
     min-height: 100vh;
@@ -121,6 +125,12 @@ button {
    
         }
 
+.button {
+  display: flex;
+  justify-content: space-between;
+  margin: 10px;
+  margin-top: 20px;
+}
 @media only screen and (min-width: 768px) {
   body{
     background-color: rgba(115, 232, 99, 0.59);
@@ -128,19 +138,26 @@ button {
     display:flex;
     justify-content: center;
     align-items: center;
-}
-h1{
+    min-width: 100vw;
+  }
+  h1{
     text-align: center;
     margin: 40px 0 ;
     font-size: 40px;
-}
-.container{
-    width: 350px;
+  }
+  .container{
+    width: 550px;
     height: 600px;
     background-color: rgba(26, 82, 16, 0.59);
     border-radius: 15px;
     justify-content: center;
     align-items: center;
     padding: 20px 40px;
-}
+  }
+  input {
+    border-radius: 10px;
+    height: 40px;
+    width: 450px;
+    padding: 20px;
+    }
 }
