@@ -34,7 +34,7 @@ function checkInput(value) {
   // checking numbers starting with 0 ***Ghana
 
   if (inputVal.substring(0, 1) == "0") {
-    if (inputVal.length == 3 || inputVal.length > 3) {
+    if (inputVal.length == 3 || inputVal.length > 3 ) {
       if (numberWithoutCode == "24" || numberWithoutCode == "54" || numberWithoutCode == "55" || numberWithoutCode == "59") {
         telecom.style.backgroundImage = "url(./logo/mtn.png)"
         telecom.style.display = 'block';
@@ -47,12 +47,13 @@ function checkInput(value) {
       } else if (numberWithoutCode == "23") {
         telecom.style.backgroundImage = "url(./logo/glo.png)"
         telecom.style.display = "block"
-      }
-      else if (numberWithoutCode == "") {
+      } else if (numberWithoutCode == "") {
         telecom.style.display = "none"
-      }
-    } else {
+      } else if (numberWithCode > 10){
+        telecom.style.display = "none"
+      } else {
       telecom.style.display = "none"
+      }
     }
 
   }
@@ -139,12 +140,7 @@ function checkInput(value) {
 
   }
 
-  //handling when there is no 0 or country code
-
-  // if (inputVal.substring(0, 1) != 0 || inputVal.substring(0, 1) != "+" ){
-  //     telecom.style.display = "none"
-  //     alert ("please put in a valid number")
-  // }
+ 
 
 }
 
